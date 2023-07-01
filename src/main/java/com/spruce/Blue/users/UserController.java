@@ -2,6 +2,7 @@ package com.spruce.Blue.users;
 
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -19,7 +20,7 @@ public class UserController {
     }
 
     @PostMapping("/users")
-    public User createUser(@RequestBody User newUser){
+    public User createUser(@RequestBody @Valid User newUser){
         return userRepository.save(newUser);
     }
 }

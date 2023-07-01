@@ -1,5 +1,4 @@
 plugins {
-//	id 'java'
 	id 'org.springframework.boot' version '2.7.5'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
@@ -17,14 +16,13 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator:2.7.12'
 	implementation 'org.springframework.boot:spring-boot-starter:2.7.8'
 	implementation 'org.springframework.boot:spring-boot-starter-web:2.7.12'
-//	implementation 'org.springframework.data:spring-boot-starter-data-jpa:2.7.1'
-//	implementation 'org.springframework.data:spring-data-jpa:2.7.5'
-	implementation 'junit:junit:4.12'
-	implementation 'org.springframework.boot:spring-boot-test:2.7.12'
+	implementation 'com.h2database:h2:2.1.214'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.7.12'
 	implementation 'org.opendaylight.persistence:persistence-jpa:1.0.0-Lithium'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.8'
+	implementation 'org.springframework.boot:spring-boot-starter-validation:2.7.4'
+	testImplementation 'junit:junit:4.13.1'
 	runtimeOnly 'org.postgresql:postgresql:42.5.4'
-
 
 }
 
